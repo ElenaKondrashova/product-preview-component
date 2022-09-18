@@ -1,0 +1,83 @@
+/* Color Palette */
+:root {
+    /* Primary colors */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* Neutral colors */
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--cream);
+    min-height: 100vh;
+}
+
+.product-container {
+    width: 100%;
+    max-width: 26.7rem;
+    background: var(--white);
+    border-radius: 0.7rem;
+}
+
+.img-desktop {
+    display: none;
+}
+
+.img-mobile {
+    max-width: 100%;
+    border-radius: 0.7rem 0.7rem 0 0;
+}
+
+.product-type,
+.product-desc {
+    color: var(--dark-grayish-blue);
+}
+
+.product-details {
+    padding: 1.8rem;
+}
+
+.product-type {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    font-style: normal;
+}
+
+.product-title {
+    color: var(--very-dark-blue);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    margin: 1.2rem 0;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
