@@ -31,6 +31,8 @@ body {
 }
 
 .product-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 26.7rem;
     background: var(--white);
@@ -47,8 +49,17 @@ body {
 }
 
 .product-type,
-.product-desc {
+.product-desc,
+.old-price {
     color: var(--dark-grayish-blue);
+    font-style: normal;
+}
+
+.product-title,
+.new-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2.3rem;
 }
 
 .product-details {
@@ -59,23 +70,54 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-size: 0.8rem;
-    font-style: normal;
 }
 
 .product-title {
     color: var(--very-dark-blue);
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 2.3rem;
     line-height: 2.5rem;
     margin: 1.2rem 0;
 }
 
+.product-desc {
+    line-height: 1.8rem;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
 
+.product-price {
+    display: flex;
+    align-items: center;
+}
+
+.new-price {
+    color: var(--dark-cyan);
+    margin-right: 1.5rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.product-buy {
+    padding: 0 1.8rem 1.8rem 1.8rem;
+}
+
+.add-cart {
+    width: 100%;
+    background: var(--dark-cyan) url(images/icon-cart.svg) no-repeat 30% 50%;
+    color: var(--white);
+    border: none;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
 
 .attribution {
+    margin: 1rem 0;
     font-size: 11px;
     text-align: center;
+    font-style: italic;
 }
 
 .attribution a {
