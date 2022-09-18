@@ -2,6 +2,7 @@
 :root {
     /* Primary colors */
     --dark-cyan: hsl(158, 36%, 37%);
+    --darker-cyan: hsl(158, 36%, 25%);
     --cream: hsl(30, 38%, 92%);
 
     /* Neutral colors */
@@ -34,7 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 26.7rem;
+    max-width: 37.5rem;
     background: var(--white);
     border-radius: 0.7rem;
 }
@@ -111,6 +112,13 @@ body {
     padding: 1rem;
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+.add-cart:hover {
+    background: var(--darker-cyan) url(images/icon-cart.svg) no-repeat 30% 50%;
+    cursor: pointer;
+    transform: scale(0.99);
+    box-shadow: 10px 10px 16px -8px rgba(16, 35, 28, 0.73);
 }
 
 .attribution {
